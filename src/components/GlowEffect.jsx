@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 export default function GlowEffect() {
   return (
     <motion.div
-      className="fixed top-0 left-0 z-40 pointer-events-none"
+      className="fixed top-0 right-0 z-40 pointer-events-none"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}

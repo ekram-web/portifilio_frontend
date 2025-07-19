@@ -25,10 +25,10 @@ export default function About() {
           >
             <defs>
               <linearGradient id="ellipse-gradient" x1="0" y1="130" x2="340" y2="130" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stop-color="#7f5af0">
+                <stop offset="0%" stopColor="#7f5af0">
                   <animate attributeName="stop-color" values="#7f5af0;#00c6fb;#7f5af0" dur="4s" repeatCount="indefinite" />
                 </stop>
-                <stop offset="100%" stop-color="#00c6fb">
+                <stop offset="100%" stopColor="#00c6fb">
                   <animate attributeName="stop-color" values="#00c6fb;#7f5af0;#00c6fb" dur="4s" repeatCount="indefinite" />
                 </stop>
               </linearGradient>
