@@ -5,16 +5,16 @@ const navLinks = [
   { name: 'About', href: '#about' },
   { name: 'Portfolio', href: '#portfolio' },
   { name: 'Contact', href: '#contact' },
-  { name: 'Blog', href: '#blog' },
+  // { name: 'Blog', href: '#blog' },
 ];
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-12 py-5 bg-gradient-to-r from-[#18122B]/80 via-[#393053]/80 to-[#443C68]/80 backdrop-blur-xl shadow-2xl border-b border-white/10">
+    <nav className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-12 py-2 bg-gradient-to-r from-[#18122B]/80 via-[#393053]/80 to-[#443C68]/80 backdrop-blur-xl shadow-2xl border-b border-white/10">
       {/* Logo/Name */}
       <div className="flex items-center gap-4">
-        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center font-bold text-white text-3xl shadow-lg">D</div>
-        <span className="text-white text-2xl font-extrabold tracking-wide font-sans">Demo Name</span>
+        {/* <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center font-bold text-white text-3xl shadow-lg">D</div> */}
+        {/* <span className="text-white text-2xl font-extrabold tracking-wide font-sans">Demo Name</span> */}
         {/* Animated Badge */}
         <motion.span
           className="ml-6 flex items-center gap-2 px-4 py-1 rounded-full bg-[#232526]/80 text-green-400 font-semibold text-base shadow-lg border border-green-400/30"

@@ -7,6 +7,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Blog from "./components/Blog";
 import GlowEffect from "./components/GlowEffect";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
 
       <Contact />
       {/* <Blog /> */}
+      <Footer />
     </>
   );
 }

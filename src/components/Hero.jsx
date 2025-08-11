@@ -33,7 +33,7 @@ export default function Hero() {
       {/* Hero text */}
       <div className="z-10 flex-1 flex flex-col items-start justify-center">
         <h1 className="text-5xl md:text-7xl font-extrabold text-white text-left mb-6 drop-shadow-lg">
-          Hi, I'm <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Your Name</span>
+          Hi, I'm <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">EKRAM</span>
         </h1>
         {/* Typewriter effect */}
         <div className="text-2xl md:text-3xl font-mono h-10 mb-8 flex items-center">
