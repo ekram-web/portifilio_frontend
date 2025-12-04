@@ -70,7 +70,7 @@ export default function Contact() {
         {status.ok === true && <p className="text-green-400 text-sm">Message sent! I will get back to you soon.</p>}
         {status.ok === false && <p className="text-red-400 text-sm">{status.error}</p>}
       </motion.form>
-      <div className="text-gray-400 mt-8">Or email: <a href="mailto:demo@email.com" className="text-blue-400 underline">demo@email.com</a></div>
+      <div className="text-gray-400 mt-8">Or email: <a href="mailto:demo@email.com" className="text-blue-400 underline">ekruumiye@email.com</a></div>
     </section>
   );
 } 

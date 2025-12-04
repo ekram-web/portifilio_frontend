@@ -3,10 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import ekramCertImg from '../assets/certeficate/Ekram--1751444296321.jpg';
 
 const certificates = [
-  { title: 'React Developer', org: 'Meta', year: 2023 },
-  { title: 'Fullstack Engineer', org: 'Coursera', year: 2022 },
-  { title: 'AI Specialist', org: 'Google', year: 2024 },
-  { title: 'Certificate of Completion', org: 'Evangadi', year: 2025, img: ekramCertImg },
+
+  { title: 'Certificate of Completion', org: 'Evangadi tech', year: 2025, img: ekramCertImg },
 ];
 
 export default function Certificates() {

@@ -61,7 +61,7 @@ export default function Hero() {
           whileTap={{ scale: 0.97 }}
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
         >
-          See My Work
+          My Work
         </motion.a>
       </div>
       {/* Floating SVG/tech illustration */}
