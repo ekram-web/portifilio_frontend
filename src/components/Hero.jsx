@@ -33,20 +33,31 @@ export default function Hero() {
       {/* Hero text */}
       <div className="z-10 flex-1 flex flex-col items-start justify-center">
         <h1 className="text-5xl md:text-7xl font-extrabold text-white text-left mb-6 drop-shadow-lg">
-          Hi, I'm <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">EKRAM</span>
+          Hi, I'm{" "}
+          <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+            EKRAM
+          </span>
         </h1>
         {/* Typewriter effect */}
         <div className="text-2xl md:text-3xl font-mono h-10 mb-8 flex items-center">
-          <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold animate-pulse drop-shadow">{displayed}</span>
+          <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold animate-pulse drop-shadow">
+            {displayed}
+          </span>
           <span className="text-blue-400 animate-pulse ml-1">|</span>
         </div>
         <p className="text-xl md:text-2xl text-gray-200 text-left mb-10 max-w-2xl">
-          I build <span className="text-blue-300 font-semibold">amazing</span> digital experiences with <span className="text-blue-300 font-semibold">animation</span> and <span className="text-blue-300 font-semibold">detail</span>.
+          I build <span className="text-blue-300 font-semibold">amazing</span>{" "}
+          digital experiences with{" "}
+          <span className="text-blue-300 font-semibold">animation</span> and{" "}
+          <span className="text-blue-300 font-semibold">detail</span>.
         </p>
         <motion.a
           href="#projects"
           className="px-10 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full font-bold shadow-xl backdrop-blur-md hover:from-blue-600 hover:to-purple-600 transition text-lg sm:text-xl"
-          whileHover={{ scale: 1.08, boxShadow: "0px 8px 32px 0px rgba(100, 0, 255, 0.3)" }}
+          whileHover={{
+            scale: 1.08,
+            boxShadow: "0px 8px 32px 0px rgba(100, 0, 255, 0.3)",
+          }}
           whileTap={{ scale: 0.97 }}
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
         >
@@ -60,14 +71,53 @@ export default function Hero() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.5, duration: 1 }}
       >
-        <svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="60" y="100" width="200" height="120" rx="24" fill="#232526" stroke="#38BDF8" strokeWidth="4" />
-          <rect x="100" y="140" width="120" height="40" rx="10" fill="#38BDF8" opacity="0.7" />
+        <svg
+          width="320"
+          height="320"
+          viewBox="0 0 320 320"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            x="60"
+            y="100"
+            width="200"
+            height="120"
+            rx="24"
+            fill="#232526"
+            stroke="#38BDF8"
+            strokeWidth="4"
+          />
+          <rect
+            x="100"
+            y="140"
+            width="120"
+            height="40"
+            rx="10"
+            fill="#38BDF8"
+            opacity="0.7"
+          />
           <circle cx="160" cy="160" r="16" fill="#a78bfa" />
-          <rect x="140" y="200" width="40" height="20" rx="6" fill="#fff" opacity="0.8" />
-          <rect x="120" y="80" width="80" height="20" rx="6" fill="#fff" opacity="0.2" />
+          <rect
+            x="140"
+            y="200"
+            width="40"
+            height="20"
+            rx="6"
+            fill="#fff"
+            opacity="0.8"
+          />
+          <rect
+            x="120"
+            y="80"
+            width="80"
+            height="20"
+            rx="6"
+            fill="#fff"
+            opacity="0.2"
+          />
         </svg>
       </motion.div>
     </section>
   );
-} 
+}
