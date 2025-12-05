@@ -113,7 +113,7 @@ const projects = [
   {
     title: "ak-vision Admin",
     desc: "Administrative dashboard and content management system for ak-vision website, providing comprehensive control over content, users, and platform management.",
-    img: besiraImg,
+    img: akadmin,
     link: null,
     tech: ["react", "javascript", "html", "css"],
     category: "Full Stack Development",
