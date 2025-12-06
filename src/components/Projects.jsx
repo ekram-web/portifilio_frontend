@@ -103,7 +103,7 @@ export default function Projects() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Projects
@@ -122,7 +122,7 @@ export default function Projects() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
             >
               <div className="relative bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl overflow-hidden border border-white/20 hover:border-blue-400/50 transition-all duration-300">
                 {/* Project Image */}
@@ -195,7 +195,7 @@ export default function Projects() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
         >
           <h3 className="text-3xl font-bold text-white mb-4">
             Let's work together
