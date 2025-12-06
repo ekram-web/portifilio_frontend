@@ -1,4 +1,8 @@
 import { motion } from "framer-motion";
+import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt } from "react-icons/fa";
+import { SiJavascript, SiFirebase, SiVercel, SiNetlify } from "react-icons/si";
+import { FiExternalLink, FiChevronRight } from "react-icons/fi";
+
 import appleImg from "../assets/project/apple.png";
 import amazonImg from "../assets/project/Amazon-clone.png";
 import evangadiImg from "../assets/project/evangadi_fourm.png";
@@ -8,81 +12,15 @@ import adminBesiraImg from "../assets/project/admin_besira.png";
 import akadmin from "../assets/project/ak-admin.png";
 import akweb from "../assets/project/ak-web.png";
 
-// Tech stack icons (SVGs)
 const techIcons = {
-  react: (
-    <svg key="react" className="w-6 h-6" viewBox="0 0 40 40" fill="none">
-      <circle cx="20" cy="20" r="18" stroke="#61DAFB" strokeWidth="3" />
-      <ellipse
-        cx="20"
-        cy="20"
-        rx="10"
-        ry="18"
-        stroke="#61DAFB"
-        strokeWidth="3"
-      />
-      <ellipse
-        cx="20"
-        cy="20"
-        rx="18"
-        ry="10"
-        stroke="#61DAFB"
-        strokeWidth="3"
-      />
-      <circle cx="20" cy="20" r="3" fill="#61DAFB" />
-    </svg>
-  ),
-  node: (
-    <svg key="node" className="w-6 h-6" viewBox="0 0 40 40" fill="none">
-      <polygon points="20,5 35,13 35,27 20,35 5,27 5,13" fill="#3C873A" />
-    </svg>
-  ),
-  javascript: (
-    <svg key="javascript" className="w-6 h-6" viewBox="0 0 40 40" fill="none">
-      <rect x="8" y="8" width="24" height="24" rx="4" fill="#F7DF1E" />
-      <path d="M16 20l2-2 2 2 2-2" stroke="#000" strokeWidth="2" />
-    </svg>
-  ),
-  html: (
-    <svg key="html" className="w-6 h-6" viewBox="0 0 40 40" fill="none">
-      <path
-        d="M8 8l4 4 4-4 4 4 4-4"
-        stroke="#E34F26"
-        strokeWidth="3"
-        strokeLinecap="round"
-      />
-    </svg>
-  ),
-  css: (
-    <svg key="css" className="w-6 h-6" viewBox="0 0 40 40" fill="none">
-      <path
-        d="M10 10l10 10 10-10"
-        stroke="#1572B6"
-        strokeWidth="3"
-        strokeLinecap="round"
-      />
-    </svg>
-  ),
-  firebase: (
-    <svg key="firebase" className="w-6 h-6" viewBox="0 0 40 40" fill="none">
-      <path
-        d="M20 8l12 8-4 16-8-4-8 4-4-16z"
-        fill="#FFCA28"
-        stroke="#F57C00"
-        strokeWidth="2"
-      />
-    </svg>
-  ),
-  vercel: (
-    <svg key="vercel" className="w-6 h-6" viewBox="0 0 40 40" fill="none">
-      <path d="M20 8l12 12H8z" fill="#000000" />
-    </svg>
-  ),
-  netlify: (
-    <svg key="netlify" className="w-6 h-6" viewBox="0 0 40 40" fill="none">
-      <path d="M8 20l12-12 12 12-12 12z" fill="#00AD9F" />
-    </svg>
-  ),
+  react: <FaReact className="w-6 h-6" />,
+  node: <FaNodeJs className="w-6 h-6" />,
+  javascript: <SiJavascript className="w-6 h-6" />,
+  html: <FaHtml5 className="w-6 h-6" />,
+  css: <FaCss3Alt className="w-6 h-6" />,
+  firebase: <SiFirebase className="w-6 h-6" />,
+  vercel: <SiVercel className="w-6 h-6" />,
+  netlify: <SiNetlify className="w-6 h-6" />,
 };
 
 const projects = [
@@ -192,8 +130,10 @@ export default function Projects() {
                 <div className="relative overflow-hidden h-64">
                   <img
                     src={project.img}
-                    alt={project.title}
+                    alt={`${project.title} screenshot`}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
@@ -213,8 +153,10 @@ export default function Projects() {
                       <div
                         key={idx}
                         className="flex items-center justify-center w-8 h-8 bg-white/10 rounded-lg"
+                        title={tech}
+                        aria-hidden="true"
                       >
-                        {techIcons[tech]}
+                        {techIcons[tech] || null}
                       </div>
                     ))}
                   </div>
@@ -229,56 +171,17 @@ export default function Projects() {
                         className="text-blue-400 hover:text-blue-300 font-medium transition-colors duration-300 flex items-center gap-2"
                       >
                         Live Demo
-                        <svg
-                          width="16"
-                          height="16"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
+                        <FiExternalLink className="inline-block" />
                       </a>
                     ) : (
                       <span className="text-gray-500 font-medium flex items-center gap-2">
                         No Live Demo
-                        <svg
-                          width="16"
-                          height="16"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
+                        <FiExternalLink className="inline-block opacity-40" />
                       </span>
                     )}
                     <button className="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg transition-colors duration-300 flex items-center gap-2">
                       Details
-                      <svg
-                        width="16"
-                        height="16"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M5 12h14M13 6l6 6-6 6"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
+                      <FiChevronRight />
                     </button>
                   </div>
                 </div>
@@ -308,15 +211,7 @@ export default function Projects() {
             whileTap={{ scale: 0.98 }}
           >
             Get in Touch
-            <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
-              <path
-                d="M5 12h14M13 6l6 6-6 6"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+            <FiChevronRight />
           </motion.a>
         </motion.div>
       </div>
