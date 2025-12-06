@@ -91,7 +91,9 @@
 // } 
 
 import { motion, useReducedMotion } from "framer-motion";
-import { FaCode, FaPalette, FaStar, FaSparkles } from "react-icons/fa";
+import { FaCode, FaPalette, FaStar } from "react-icons/fa";
+import { MdAutoAwesome } from "react-icons/md";
+
 import personimage from "../assets/imagebgremove.png";
 
 const highlights = [
@@ -145,7 +147,7 @@ export default function About() {
                 transition={{ duration: 0.6, delay: 0.08 }}
                 viewport={{ once: true }}
               >
-                <FaSparkles />
+                <MdAutoAwesome />
               </motion.span>
 
               <motion.span
