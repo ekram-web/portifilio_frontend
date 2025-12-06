@@ -117,7 +117,33 @@ export default function Hero() {
             opacity="0.2"
           />
         </svg> */}
-        
+
+        <div className="w-80 h-80 rounded-2xl bg-[#232526]/40 border border-white/10 p-6 flex items-center justify-center">
+          <div className="grid grid-cols-2 gap-4">
+            {[
+              { Icon: FaReact, color: "#61DAFB", label: "React" },
+              { Icon: SiTailwindcss, color: "#38BDF8", label: "Tailwind CSS" },
+              { Icon: FaNodeJs, color: "#3C873A", label: "Node.js" },
+              { Icon: SiJavascript, color: "#F7DF1E", label: "JavaScript" },
+              { Icon: FaHtml5, color: "#E34F26", label: "HTML5" },
+              { Icon: FaCss3Alt, color: "#1572B6", label: "CSS3" },
+            ].map(({ Icon, color, label }, i) => (
+              <motion.div
+                key={i}
+                className="flex items-center justify-center bg-white/5 rounded-xl p-3"
+                whileHover={{ scale: 1.06 }}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.06 * i, type: "spring", stiffness: 160 }}
+                viewport={{ once: false, amount: 0.3 }}
+                aria-hidden="true"
+                title={label}
+              >
+                <Icon className="text-4xl" style={{ color }} />
+              </motion.div>
+            ))}
+          </div>
+        </div>
       </motion.div>
     </section>
   );
