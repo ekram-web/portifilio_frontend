@@ -88,7 +88,7 @@
 //       </div>
 //     </section>
 //   );
-// } 
+// }
 
 import { motion, useReducedMotion } from "framer-motion";
 import { FaCode, FaPalette, FaStar } from "react-icons/fa";
@@ -135,7 +135,7 @@ export default function About() {
                 initial={{ opacity: 0, y: 12 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                viewport={{ once: true }}
+                viewport={{ once: false }}
               >
                 <FaStar />
               </motion.span>
@@ -145,7 +145,7 @@ export default function About() {
                 initial={{ opacity: 0, y: 12 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.08 }}
-                viewport={{ once: true }}
+                viewport={{ once: false }}
               >
                 <MdAutoAwesome />
               </motion.span>
@@ -155,7 +155,7 @@ export default function About() {
                 initial={{ opacity: 0, y: 12 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.14 }}
-                viewport={{ once: true }}
+                viewport={{ once: false }}
               >
                 <FaCode />
               </motion.span>
@@ -165,7 +165,7 @@ export default function About() {
                 initial={{ opacity: 0, y: 12 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                viewport={{ once: true }}
+                viewport={{ once: false }}
               >
                 <FaPalette />
               </motion.span>
@@ -183,7 +183,7 @@ export default function About() {
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, type: "spring", stiffness: 200 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
           />
         </div>
 
@@ -202,7 +202,7 @@ export default function About() {
                 initial={{ opacity: 0, x: -40 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: i * 0.15, type: "spring", stiffness: 200 }}
-                viewport={{ once: true }}
+                viewport={{ once: false }}
               >
                 <div className="bg-blue-400 text-white font-bold rounded-full w-16 h-16 flex items-center justify-center text-2xl shadow-lg">
                   {item.year}
