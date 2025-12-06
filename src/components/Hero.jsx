@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { FaReact, FaCss3Alt, FaHtml5, FaNodeJs } from "react-icons/fa";
+import { SiTailwindcss, SiJavascript } from "react-icons/si";
 
 const skills = ["Fullstack Developer", "AI Engineer", ""];
 
