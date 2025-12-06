@@ -13,16 +13,15 @@ import akadmin from "../assets/project/ak-admin.png";
 import akweb from "../assets/project/ak-web.png";
 
 const techIcons = {
-  react: <FaReact className="w-6 h-6" />,
-  node: <FaNodeJs className="w-6 h-6" />,
-  javascript: <SiJavascript className="w-6 h-6" />,
-  html: <FaHtml5 className="w-6 h-6" />,
-  css: <FaCss3Alt className="w-6 h-6" />,
-  firebase: <SiFirebase className="w-6 h-6" />,
-  vercel: <SiVercel className="w-6 h-6" />,
-  netlify: <SiNetlify className="w-6 h-6" />,
+  react: <FaReact className="w-6 h-6" style={{ color: "#61DAFB" }} />,
+  node: <FaNodeJs className="w-6 h-6" style={{ color: "#3C873A" }} />,
+  javascript: <SiJavascript className="w-6 h-6" style={{ color: "#F7DF1E" }} />,
+  html: <FaHtml5 className="w-6 h-6" style={{ color: "#E34F26" }} />,
+  css: <FaCss3Alt className="w-6 h-6" style={{ color: "#1572B6" }} />,
+  firebase: <SiFirebase className="w-6 h-6" style={{ color: "#FFCA28" }} />,
+  vercel: <SiVercel className="w-6 h-6" style={{ color: "#000000" }} />,
+  netlify: <SiNetlify className="w-6 h-6" style={{ color: "#00C7B7" }} />,
 };
-
 const projects = [
   {
     title: "Besira TV",
