@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-const skills = ["Fullstack Developer", "AI Engineer", "UI/UX Enthusiast"];
+const skills = ["Fullstack Developer", "AI Engineer", ""];
 
 export default function Hero() {
   const [skillIndex, setSkillIndex] = useState(0);
@@ -71,7 +71,7 @@ export default function Hero() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.5, duration: 1 }}
       >
-        <svg
+        {/* <svg
           width="320"
           height="320"
           viewBox="0 0 320 320"
@@ -116,7 +116,8 @@ export default function Hero() {
             fill="#fff"
             opacity="0.2"
           />
-        </svg>
+        </svg> */}
+        
       </motion.div>
     </section>
   );
