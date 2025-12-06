@@ -57,7 +57,7 @@ const techIcons = {
     <svg key="css" className="w-6 h-6" viewBox="0 0 40 40" fill="none">
       <path
         d="M10 10l10 10 10-10"
-        stroke="#1572B6"
+        stroke="#1d71adff"
         strokeWidth="3"
         strokeLinecap="round"
       />
