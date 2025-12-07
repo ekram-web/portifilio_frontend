@@ -124,15 +124,15 @@ const techStack = [
       { name: "Netlify", icon: SiNetlify, color: "#00c7b7" },
     ],
   },
-  {
-    group: "Experimenting - at least one mini project",
-    items: [
-      { name: "Laravel", icon: FaLaravel, color: "#ff2d20" },
-      { name: "Spring", icon: SiSpring, color: "#6db33f" },
-      { name: "FastAPI", icon: SiFastapi, color: "#009688" },
-      { name: "jQuery", icon: SiJquery, color: "#0769ad" },
-    ],
-  },
+  // {
+  //   group: "Experimenting - at least one mini project",
+  //   items: [
+  //     { name: "Laravel", icon: FaLaravel, color: "#ff2d20" },
+  //     { name: "Spring", icon: SiSpring, color: "#6db33f" },
+  //     { name: "FastAPI", icon: SiFastapi, color: "#009688" },
+  //     { name: "jQuery", icon: SiJquery, color: "#0769ad" },
+  //   ],
+  // },
 ];
 
 const leftColumn = [
