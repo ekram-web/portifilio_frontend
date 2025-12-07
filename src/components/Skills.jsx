@@ -261,9 +261,178 @@
 //   );
 // }
 
-
-
 // ???
+// import { motion } from "framer-motion";
+// import {
+//   FaReact,
+//   FaNodeJs,
+//   FaDocker,
+//   FaPython,
+//   FaJava,
+//   FaJs,
+// } from "react-icons/fa";
+// import {
+//   SiTypescript,
+//   SiMongodb,
+//   SiPostgresql,
+//   SiMysql,
+//   SiExpress,
+//   SiNextdotjs,
+//   SiFirebase,
+//   SiVercel,
+//   SiRender,
+//   SiHostinger,
+//   SiCpanel,
+//   SiNetlify,
+//   SiChakraui,
+//   SiLaravel,
+//   SiPostman,
+// } from "react-icons/si";
+
+// const techStack = [
+//   {
+//     group: "Frontend",
+//     items: [
+//       { name: "JavaScript", icon: FaJs, color: "#f7df1e" },
+//       { name: "TypeScript", icon: SiTypescript, color: "#3178c6" },
+//       { name: "React", icon: FaReact, color: "#61dafb" },
+//       { name: "Next.js", icon: SiNextdotjs, color: "#fff" },
+//       { name: "Tailwind CSS", icon: SiChakraui, color: "#38bdf8" },
+//     ],
+//   },
+//   {
+//     group: "Backend",
+//     items: [
+//       { name: "Node.js", icon: FaNodeJs, color: "#3c873a" },
+//       { name: "Express.js", icon: SiExpress, color: "#fff" },
+//       { name: "Laravel", icon: SiLaravel, color: "#f72b0c" },
+//     ],
+//   },
+//   {
+//     group: "Database & DevOps",
+//     items: [
+//       { name: "MySQL", icon: SiMysql, color: "#00758f" },
+//       { name: "PostgreSQL", icon: SiPostgresql, color: "#336791" },
+//       { name: "MongoDB", icon: SiMongodb, color: "#47a248" },
+//       { name: "Docker", icon: FaDocker, color: "#2496ed" },
+//       { name: "Firebase", icon: SiFirebase, color: "#ffca28" },
+//     ],
+//   },
+//   {
+//     group: "Deployment & Tools",
+//     items: [
+//       { name: "Vercel", icon: SiVercel, color: "#fff" },
+//       { name: "Render", icon: SiRender, color: "#46e3b7" },
+//       { name: "Hostinger", icon: SiHostinger, color: "#673de6" },
+//       { name: "cPanel", icon: SiCpanel, color: "#ff6c2c" },
+//       { name: "Netlify", icon: SiNetlify, color: "#00c7b7" },
+//       { name: "Postman", icon: SiPostman, color: "#ff6c37" },
+//     ],
+//   },
+//   {
+//     group: "Programming Languages",
+//     items: [
+//       { name: "Python", icon: FaPython, color: "#37ab3b" },
+//       { name: "Java", icon: FaJava, color: "#007396" },
+//     ],
+//   },
+// ];
+
+// function TechItem({ name, icon: Icon, color, index }) {
+//   return (
+//     <motion.div
+//       key={name}
+//       className="rounded-lg bg-gradient-to-br from-[#232946]/70 to-[#393053]/70 p-2 flex flex-col items-center justify-center shadow-md border border-blue-400/10 hover:border-blue-400/50 transition-all duration-200 cursor-pointer"
+//       whileHover={{
+//         scale: 1.08,
+//         boxShadow: `0 0 15px 3px ${color}, 0 0 30px 6px #00c6fb`,
+//       }}
+//       initial={{ opacity: 0, y: 15 }}
+//       animate={{ opacity: 1, y: 0 }}
+//       transition={{ delay: index * 0.03, duration: 0.3, type: "spring" }}
+//       title={name}
+//       aria-label={name}
+//     >
+//       <Icon className="text-2xl md:text-3xl mb-1" style={{ color }} />
+//       <span className="text-xs md:text-sm text-white mt-0.5">{name}</span>
+//     </motion.div>
+//   );
+// }
+
+// function TechGroup({ group, items, groupIndex }) {
+//   return (
+//     <motion.div
+//       className="mb-6 md:mb-8"
+//       initial={{ opacity: 0, y: 20 }}
+//       whileInView={{ opacity: 1, y: 0 }}
+//       transition={{ delay: groupIndex * 0.1, duration: 0.5, type: "spring" }}
+//       viewport={{ once: false, amount: 0.3 }}
+//     >
+//       <h3 className="text-lg md:text-xl font-semibold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-3 drop-shadow-lg">
+//         {group}
+//       </h3>
+//       <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 gap-2 md:gap-3">
+//         {items.map((item, i) => (
+//           <TechItem key={item.name} {...item} index={i} />
+//         ))}
+//       </div>
+//     </motion.div>
+//   );
+// }
+
+// export default function Skills() {
+//   return (
+//     <section
+//       id="skills"
+//       className="relative w-full py-12 md:py-16 bg-gradient-to-b from-[#18122B] via-[#232946] to-[#232526] flex flex-col items-center overflow-hidden"
+//     >
+//       {/* Grid Background */}
+//       <div className="pointer-events-none absolute inset-0 z-0 opacity-20">
+//         <svg
+//           width="100%"
+//           height="100%"
+//           className="w-full h-full"
+//           xmlns="http://www.w3.org/2000/svg"
+//         >
+//           <defs>
+//             <pattern
+//               id="grid"
+//               width="40"
+//               height="40"
+//               patternUnits="userSpaceOnUse"
+//             >
+//               <path
+//                 d="M40 0 H0 V40"
+//                 fill="none"
+//                 stroke="#7f5af0"
+//                 strokeWidth="0.5"
+//               />
+//             </pattern>
+//           </defs>
+//           <rect x="0" y="0" width="100%" height="100%" fill="url(#grid)" />
+//         </svg>
+//       </div>
+
+//       <motion.h2
+//         className="relative z-10 text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-10 text-center drop-shadow-lg"
+//         initial={{ opacity: 0, y: 20 }}
+//         whileInView={{ opacity: 1, y: 0 }}
+//         transition={{ duration: 0.5 }}
+//         viewport={{ once: false, amount: 0.3 }}
+//       >
+//         Tech Stack
+//       </motion.h2>
+
+//       <div className="relative z-10 w-full max-w-6xl px-4 md:px-6 flex flex-col gap-6">
+//         {techStack.map((group, idx) => (
+//           <TechGroup key={group.group} {...group} groupIndex={idx} />
+//         ))}
+//       </div>
+//     </section>
+//   );
+// }
+
+// !!!
 import { motion } from "framer-motion";
 import {
   FaReact,
@@ -291,93 +460,69 @@ import {
   SiPostman,
 } from "react-icons/si";
 
+// Ultra-dense tech stack
 const techStack = [
-  {
-    group: "Frontend",
-    items: [
-      { name: "JavaScript", icon: FaJs, color: "#f7df1e" },
-      { name: "TypeScript", icon: SiTypescript, color: "#3178c6" },
-      { name: "React", icon: FaReact, color: "#61dafb" },
-      { name: "Next.js", icon: SiNextdotjs, color: "#fff" },
-      { name: "Tailwind CSS", icon: SiChakraui, color: "#38bdf8" },
-    ],
-  },
-  {
-    group: "Backend",
-    items: [
-      { name: "Node.js", icon: FaNodeJs, color: "#3c873a" },
-      { name: "Express.js", icon: SiExpress, color: "#fff" },
-      { name: "Laravel", icon: SiLaravel, color: "#f72b0c" },
-    ],
-  },
-  {
-    group: "Database & DevOps",
-    items: [
-      { name: "MySQL", icon: SiMysql, color: "#00758f" },
-      { name: "PostgreSQL", icon: SiPostgresql, color: "#336791" },
-      { name: "MongoDB", icon: SiMongodb, color: "#47a248" },
-      { name: "Docker", icon: FaDocker, color: "#2496ed" },
-      { name: "Firebase", icon: SiFirebase, color: "#ffca28" },
-    ],
-  },
-  {
-    group: "Deployment & Tools",
-    items: [
-      { name: "Vercel", icon: SiVercel, color: "#fff" },
-      { name: "Render", icon: SiRender, color: "#46e3b7" },
-      { name: "Hostinger", icon: SiHostinger, color: "#673de6" },
-      { name: "cPanel", icon: SiCpanel, color: "#ff6c2c" },
-      { name: "Netlify", icon: SiNetlify, color: "#00c7b7" },
-      { name: "Postman", icon: SiPostman, color: "#ff6c37" },
-    ],
-  },
-  {
-    group: "Programming Languages",
-    items: [
-      { name: "Python", icon: FaPython, color: "#37ab3b" },
-      { name: "Java", icon: FaJava, color: "#007396" },
-    ],
-  },
+  { name: "JavaScript", icon: FaJs, color: "#f7df1e" },
+  { name: "TypeScript", icon: SiTypescript, color: "#3178c6" },
+  { name: "React", icon: FaReact, color: "#61dafb" },
+  { name: "Next.js", icon: SiNextdotjs, color: "#fff" },
+  { name: "Tailwind CSS", icon: SiChakraui, color: "#38bdf8" },
+  { name: "Node.js", icon: FaNodeJs, color: "#3c873a" },
+  { name: "Express.js", icon: SiExpress, color: "#fff" },
+  { name: "Laravel", icon: SiLaravel, color: "#f72b0c" },
+  { name: "MySQL", icon: SiMysql, color: "#00758f" },
+  { name: "PostgreSQL", icon: SiPostgresql, color: "#336791" },
+  { name: "MongoDB", icon: SiMongodb, color: "#47a248" },
+  { name: "Docker", icon: FaDocker, color: "#2496ed" },
+  { name: "Firebase", icon: SiFirebase, color: "#ffca28" },
+  { name: "Vercel", icon: SiVercel, color: "#fff" },
+  { name: "Render", icon: SiRender, color: "#46e3b7" },
+  { name: "Hostinger", icon: SiHostinger, color: "#673de6" },
+  { name: "cPanel", icon: SiCpanel, color: "#ff6c2c" },
+  { name: "Netlify", icon: SiNetlify, color: "#00c7b7" },
+  { name: "Postman", icon: SiPostman, color: "#ff6c37" },
+  { name: "Python", icon: FaPython, color: "#37ab3b" },
+  { name: "Java", icon: FaJava, color: "#007396" },
 ];
+
+// Container animation: staggered fade-in
+const containerVariants = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.03 } },
+};
+
+// Each tech item animation: float + rotate + horizontal drift
+const itemVariants = {
+  hidden: { opacity: 0, scale: 0.9 },
+  visible: { opacity: 1, scale: 1 },
+  hover: { scale: 1.1, y: -3 },
+  float: (i) => ({
+    y: [0, -5 - (i % 5), 0], // vertical float
+    x: [0, 3 - (i % 4), 0], // horizontal drift
+    rotate: [0, 3 - (i % 3), 0], // subtle rotation
+    transition: {
+      duration: 3 + (i % 5),
+      repeat: Infinity,
+      ease: "easeInOut",
+    },
+  }),
+};
 
 function TechItem({ name, icon: Icon, color, index }) {
   return (
     <motion.div
-      key={name}
-      className="rounded-lg bg-gradient-to-br from-[#232946]/70 to-[#393053]/70 p-2 flex flex-col items-center justify-center shadow-md border border-blue-400/10 hover:border-blue-400/50 transition-all duration-200 cursor-pointer"
-      whileHover={{
-        scale: 1.08,
-        boxShadow: `0 0 15px 3px ${color}, 0 0 30px 6px #00c6fb`,
-      }}
-      initial={{ opacity: 0, y: 15 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: index * 0.03, duration: 0.3, type: "spring" }}
+      className="rounded-lg bg-gradient-to-br from-[#232946]/70 to-[#393053]/70 p-2 flex flex-col items-center justify-center shadow-md border border-blue-400/10 cursor-pointer"
+      variants={itemVariants}
+      initial="hidden"
+      whileInView="visible"
+      whileHover="hover"
+      animate="float"
+      custom={index}
       title={name}
       aria-label={name}
     >
-      <Icon className="text-2xl md:text-3xl mb-1" style={{ color }} />
-      <span className="text-xs md:text-sm text-white mt-0.5">{name}</span>
-    </motion.div>
-  );
-}
-
-function TechGroup({ group, items, groupIndex }) {
-  return (
-    <motion.div
-      className="mb-6 md:mb-8"
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ delay: groupIndex * 0.1, duration: 0.5, type: "spring" }}
-      viewport={{ once: false, amount: 0.3 }}
-    >
-      <h3 className="text-lg md:text-xl font-semibold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-3 drop-shadow-lg">
-        {group}
-      </h3>
-      <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 gap-2 md:gap-3">
-        {items.map((item, i) => (
-          <TechItem key={item.name} {...item} index={i} />
-        ))}
-      </div>
+      <Icon className="text-xl md:text-2xl mb-0.5" style={{ color }} />
+      <span className="text-[10px] md:text-xs text-white">{name}</span>
     </motion.div>
   );
 }
@@ -386,10 +531,10 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="relative w-full py-12 md:py-16 bg-gradient-to-b from-[#18122B] via-[#232946] to-[#232526] flex flex-col items-center overflow-hidden"
+      className="relative w-full py-10 md:py-14 bg-gradient-to-b from-[#18122B] via-[#232946] to-[#232526] flex flex-col items-center overflow-hidden"
     >
-      {/* Grid Background */}
-      <div className="pointer-events-none absolute inset-0 z-0 opacity-20">
+      {/* Animated Grid Background */}
+      <div className="pointer-events-none absolute inset-0 z-0 opacity-20 animate-pulse">
         <svg
           width="100%"
           height="100%"
@@ -416,7 +561,7 @@ export default function Skills() {
       </div>
 
       <motion.h2
-        className="relative z-10 text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-10 text-center drop-shadow-lg"
+        className="relative z-10 text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-8 text-center drop-shadow-lg"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -425,11 +570,17 @@ export default function Skills() {
         Tech Stack
       </motion.h2>
 
-      <div className="relative z-10 w-full max-w-6xl px-4 md:px-6 flex flex-col gap-6">
-        {techStack.map((group, idx) => (
-          <TechGroup key={group.group} {...group} groupIndex={idx} />
+      <motion.div
+        className="relative z-10 w-full max-w-6xl px-4 md:px-6 grid grid-cols-5 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-2 md:gap-3"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.3 }}
+      >
+        {techStack.map((tech, idx) => (
+          <TechItem key={tech.name} {...tech} index={idx} />
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 }
