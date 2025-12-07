@@ -218,8 +218,6 @@
 //   );
 // }
 
-
-
 // ???
 
 // import { motion } from "framer-motion";
@@ -404,8 +402,6 @@
 //   );
 // }
 
-
-
 // !
 import { motion } from "framer-motion";
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt } from "react-icons/fa";
@@ -434,10 +430,10 @@ const techIcons = {
 
 const projects = [
   {
-    title: "Besira TV",
-    desc: "A modern streaming platform with CMS, optimized UI, and smooth user experience.",
-    img: besiraImg,
-    link: "https://basirahtv.com/",
+    title: "AK-Vision Website",
+    desc: "Corporate website with responsive UI, animations, and optimized structure.",
+    img: akweb,
+    link: "https://website.akvision.net/",
     tech: ["react", "javascript", "html", "css"],
   },
   {
@@ -448,12 +444,13 @@ const projects = [
     tech: ["react", "javascript", "html", "css"],
   },
   {
-    title: "AK-Vision Website",
-    desc: "Corporate website with responsive UI, animations, and optimized structure.",
-    img: akweb,
-    link: "https://website.akvision.net/",
-    tech: ["react", "javascript", "html", "css"],
+    title: "Evangadi Forum",
+    desc: "Full forum system with user accounts, threads, comments, and real-time updates.",
+    img: evangadiImg,
+    link: "https://evangadi-forum-beta7.vercel.app/",
+    tech: ["react", "node", "firebase", "vercel"],
   },
+
   {
     title: "AK-Vision Admin",
     desc: "Admin panel dashboard with charts, analytics, and user management.",
@@ -462,11 +459,18 @@ const projects = [
     tech: ["react", "javascript", "html", "css"],
   },
   {
-    title: "Apple Clone",
-    desc: "Animated Apple landing page clone with clean layout and smooth scroll.",
-    img: appleImg,
-    link: "https://ekram-web.netlify.app/apple-responsive-staring-base-code/",
-    tech: ["html", "css", "javascript"],
+    title: "Besira TV",
+    desc: "A modern streaming platform with CMS, optimized UI, and smooth user experience.",
+    img: besiraImg,
+    link: "https://basirahtv.com/",
+    tech: ["react", "javascript", "html", "css"],
+  },
+  {
+    title: "Netflix Clone",
+    desc: "Streaming UI with categories, animations, responsive player layout.",
+    img: netflixImg,
+    link: "https://calm-maamoul-1c6497.netlify.app/",
+    tech: ["react", "javascript", "netlify"],
   },
   {
     title: "Amazon Clone",
@@ -475,19 +479,13 @@ const projects = [
     link: "https://full-clone-amazon.netlify.app/",
     tech: ["react", "node", "firebase"],
   },
+
   {
-    title: "Evangadi Forum",
-    desc: "Full forum system with user accounts, threads, comments, and real-time updates.",
-    img: evangadiImg,
-    link: "https://evangadi-forum-beta7.vercel.app/",
-    tech: ["react", "node", "firebase", "vercel"],
-  },
-  {
-    title: "Netflix Clone",
-    desc: "Streaming UI with categories, animations, responsive player layout.",
-    img: netflixImg,
-    link: "https://calm-maamoul-1c6497.netlify.app/",
-    tech: ["react", "javascript", "netlify"],
+    title: "Apple Clone",
+    desc: "Animated Apple landing page clone with clean layout and smooth scroll.",
+    img: appleImg,
+    link: "https://ekram-web.netlify.app/apple-responsive-staring-base-code/",
+    tech: ["html", "css", "javascript"],
   },
 ];
 
