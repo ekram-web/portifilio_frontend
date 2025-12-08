@@ -73,8 +73,7 @@
 //       <div className="text-gray-400 mt-8">Or email: <a href="mailto:demo@email.com" className="text-blue-400 underline">ekruumiye@email.com</a></div>
 //     </section>
 //   );
-// } 
-
+// }
 
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -254,12 +253,12 @@ export default function Contact() {
         )}
       </motion.form>
 
-      <div className="text-gray-400 mt-8">
+      {/* <div className="text-gray-400 mt-8">
         Or email:{" "}
         <a href="mailto:demo@email.com" className="text-blue-400 underline">
           ekruumiye@email.com
         </a>
-      </div>
+      </div> */}
     </section>
   );
 }
