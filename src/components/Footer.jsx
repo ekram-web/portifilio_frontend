@@ -11,35 +11,23 @@
 //   );
 // }
 
-import { motion } from "framer-motion";
-
 export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="w-full bg-[#0b0f15] border-t border-white/10">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="max-w-7xl mx-auto px-6 py-8 flex flex-col items-center gap-3"
-      >
-        <motion.p
-          whileHover={{ scale: 1.05 }}
-          transition={{ type: "spring", stiffness: 200 }}
-          className="text-gray-300 text-sm md:text-base"
-        >
-          © {year} <span className="text-white font-semibold">Ekram</span>. All
-          Rights Reserved.
-        </motion.p>
+    <footer className="w-full bg-[#0b0f15] relative border-t border-white/10">
+      {/* Soft glow line */}
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent blur-xl opacity-15 pointer-events-none" />
 
-        <motion.p
-          whileHover={{ opacity: 1 }}
-          className="text-xs text-gray-500 opacity-70"
-        >
-          Crafted with ❤️ — Stay Creative.
-        </motion.p>
-      </motion.div>
+      <div className="relative max-w-7xl mx-auto px-4 py-4 text-center">
+        <p className="text-gray-300 text-xs md:text-sm tracking-wide">
+          © {year} <span className="text-white font-semibold">Ekram Abdu</span>
+        </p>
+
+        <p className="text-[10px] text-gray-500 mt-1">
+          Designed with passion & precision.
+        </p>
+      </div>
     </footer>
   );
 }
