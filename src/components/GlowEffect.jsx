@@ -78,7 +78,7 @@ export default function GlowSnowEffect() {
   return (
     <>
       {/* Faint glowing orb */}
-      <motion.div
+      {/* <motion.div
         className="fixed top-0 right-0 z-40 pointer-events-none"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -114,7 +114,7 @@ export default function GlowSnowEffect() {
             transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
           />
         </svg>
-      </motion.div>
+      </motion.div> */}
 
       {/* Floating snow-like particles */}
       <div className="fixed top-0 left-0 w-full h-full pointer-events-none overflow-hidden z-30">
