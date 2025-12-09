@@ -155,17 +155,27 @@ export default function Contact() {
           <FaTelegramPlane className="text-white text-2xl hover:text-blue-300 cursor-pointer" />
         </motion.div>
 
+        
+
         <div className="w-[2px] h-24 bg-gray-500"></div>
       </div>
 
       {/* RIGHT SIDE VERTICAL EMAIL TEXT */}
       <div className="hidden md:flex flex-col items-center gap-5 absolute right-10 top-1/2 -translate-y-1/2">
-        <a
+        {/* <a
           href="mailto:ekruumiye@email.com"
-          className="text-gray-300 tracking-[0.2em] rotate-90 hover:text-blue-400 cursor-pointer"
+          className="text-gray-300 tracking-[0.1em] rotate-90 hover:text-blue-400 cursor-pointer"
         >
           ekruumiye@email.com
-        </a>
+        </a> */}
+
+          <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.7 }}
+        >
+          <FaTelegramPlane className="text-white text-2xl hover:text-blue-300 cursor-pointer" />
+        </motion.div>
         <div className="w-[2px] h-24 bg-gray-500"></div>
       </div>
 
