@@ -5,7 +5,7 @@
 //   { name: 'About', href: '#about' },
 //   { name: 'Portfolio', href: '#portfolio' },
 //   { name: 'Contact', href: '#contact' },
-  
+
 // ];
 
 // export default function Navbar() {
@@ -43,15 +43,14 @@
 //       </ul>
 //     </nav>
 //   );
-// } 
-
+// }
 
 import { motion } from "framer-motion";
 
 const navLinks = [
   { name: "Home", href: "#" },
   { name: "About", href: "#about" },
-  { name: "Portfolio", href: "#portfolio" },
+  { name: "Projects", href: "#projects" },
   { name: "Contact", href: "#contact" },
 ];
 
