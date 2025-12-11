@@ -26,6 +26,22 @@ const posts = [
     category: "Design",
     readTime: "4 min read",
   },
+  {
+    title: "Why Dark Mode Rocks",
+    date: "May 20, 2024",
+    desc: "Exploring the psychology of dark mode, contrast ratios, and how to implement a user-friendly dark theme switcher.",
+    link: "#",
+    category: "Design",
+    readTime: "4 min read",
+  },
+  {
+    title: "Why Dark Mode Rocks",
+    date: "May 20, 2024",
+    desc: "Exploring the psychology of dark mode, contrast ratios, and how to implement a user-friendly dark theme switcher.",
+    link: "#",
+    category: "Design",
+    readTime: "4 min read",
+  },
 ];
 
 // Animation variants for stagger effect
