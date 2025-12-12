@@ -23,7 +23,7 @@ function App() {
       <Certificates />
 
       <Contact />
-      <Blog />
+      {/* <Blog /> */}
       <Footer />
     </>
   );
